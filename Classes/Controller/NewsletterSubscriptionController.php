@@ -64,6 +64,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 	protected function initializeAction() {
 		  // ecom online root page, may be overwritten by TS
 		$this->settings['rootPage'] = $this->settings['rootPage'] ?: 13;
+		$this->settings['mail']['noReplyEmail'] = $this->settings['mail']['noReplyEmail'] ?: 'noreply@ecom-ex.com';
 		$this->settings['mail']['senderName'] = $this->settings['mail']['senderName'] ?: ($GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] ?: null);
 #		$this->settings['mail']['carbonCopy'] = $this->settings['mail']['carbonCopy'] ?: 'marketing@ecom-ex.com ecom Marketing';
 
@@ -170,7 +171,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 			  // Email to receiver
 			$mailToReceiver->setFrom([ $subscription->getEmail() => "{$subscription->getFirstName()} {$subscription->getLastName()}" ])
 				->setCc($this->carbonCopyEmailAddresses)
-				->setTo($this->senderEmailAddresses)
+				->setTo([ 'alexander.maertens@ecom-ex.com' => 'Alexander Maertens' ])
 				->setSubject($this->settings['mail']['receiverSubject'] ?: LocalizationUtility::translate('mail_subject_generic', $this->extensionName) . LocalizationUtility::translate('mail_subject_new', $this->extensionName))
 				->setBody($this->getStandAloneTemplate('Email/SubscriptionReceived', [
 					'subscription' => $subscription,
