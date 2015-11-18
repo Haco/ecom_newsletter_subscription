@@ -1,0 +1,25 @@
+<div class="col-md-3">
+	<f:form.textfield additionalAttributes="{data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}'}"
+	                  required="required"
+	                  placeholder="{f:translate(id: 'form_placeholder_name', default: 'Your name*')}"
+	                  class="form-control"
+	                  id="ecnls-name"
+	                  property="name" />
+</div>
+<div class="col-md-3">
+	<f:form.textfield additionalAttributes="{data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}'}"
+	                  required="required"
+	                  placeholder="{f:translate(id: 'form_placeholder_company', default: 'Your company*')}"
+	                  class="form-control"
+	                  id="ecnls-company"
+	                  property="company" />
+</div>
+<div class="col-md-3">
+	<f:form.textfield additionalAttributes="{autocomplete: 'off', data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}', data-parsley-error-message: '{f:translate(id: \'form_parsley_invalidemail\')}'}"
+	                  required="required"
+	                  placeholder="{f:translate(id: 'form_placeholder_email', default: 'Your email address*')}"
+	                  class="form-control"
+	                  id="ecnls-email"
+	                  property="email"
+	                  type="email" />
+</div>

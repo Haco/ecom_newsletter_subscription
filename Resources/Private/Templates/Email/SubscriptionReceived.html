@@ -1,0 +1,9 @@
+<p><f:translate id="mail_subscriptionreceived_head" default="Name" extensionName="ecom_newsletter_subscription" /></p>
+<table style="font-family: Arial,'Helvetica Neue',Helvetica,sans-serif">
+	<tr><td><f:translate id="name" default="Name" extensionName="ecom_newsletter_subscription" />: </td><td>{subscription.name}</td></tr>
+	<tr><td><f:translate id="company" default="Company" extensionName="ecom_newsletter_subscription" />: </td><td>{subscription.company}</td></tr>
+	<tr><td><f:translate id="email" default="Email" extensionName="ecom_newsletter_subscription" />: </td><td>{subscription.email}</td></tr>
+</table>
+<p>&nbsp;</p>
+<f:render partial="Misc/MarketingInformation" arguments="{marketingInformation: marketingInformation}" />
+<p>&nbsp;</p>

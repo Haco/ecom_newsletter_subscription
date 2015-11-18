@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-13T11:48:47Z" product-name="ecom_newsletter_subscription">
+		<header/>
+		<body>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription">
+				<source>Newsletter subscription</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.gender.0">
+				<source>Male</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.gender.1">
+				<source>Female</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.middle_name">
+				<source>Middle name</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.birthday">
+				<source>Birthday</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.mobile">
+				<source>Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.www">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.building">
+				<source>Building</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.room">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.zip">
+				<source>Postal code</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.state">
+				<source>State / Province</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_ecomnewslettersubscription_domain_model_subscription.hash">
+				<source>Hash Value</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

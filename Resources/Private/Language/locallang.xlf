@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-13T11:48:47Z" product-name="ecom_newsletter_subscription">
+		<header/>
+		<body>
+			<!-- Mails -->
+			<trans-unit id="mail_address" xml:space="preserve">
+				<source>Dear %1$s</source>
+			</trans-unit>
+			<trans-unit id="mail_subject_generic" xml:space="preserve">
+				<source>ecom Newsletter</source>
+			</trans-unit>
+			<trans-unit id="mail_subject_new" xml:space="preserve">
+				<source> - New subscription</source>
+			</trans-unit>
+			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
+				<source> - Subscription confirmed</source>
+			</trans-unit>
+			<trans-unit id="mail_subject_deleted" xml:space="preserve">
+				<source> - Subscription deleted</source>
+			</trans-unit>
+			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
+				<source>You have successfully confirmed your subscription.</source>
+			</trans-unit>
+			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
+				<source>Your subscription was DELETED!</source>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
+				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_introlinkconfirm" xml:space="preserve">
+				<source>Before your subscriptions is fully enabled, you must click this link:</source>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
+				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
+			</trans-unit>
+			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
+				<source>New subscription received</source>
+			</trans-unit>
+
+			<!-- Mail status messages -->
+			<trans-unit id="mail_status_initialsubscription_head" xml:space="preserve">
+				<source>Subscription received</source>
+			</trans-unit>
+			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
+				<source>Email was resend</source>
+			</trans-unit>
+			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
+				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
+			</trans-unit>
+			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
+				<source>Your subscription was approved</source>
+			</trans-unit>
+			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
+				<source>Your subscription was DELETED!</source>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
+				<source>The email address was already confirmed!</source>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
+				<source>Apparently you're already registered with this email address!</source>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
+				<source>The link has expired!</source>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
+				<source>A registration was already submitted, but not yet confirmed!</source>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
+				<source>Click here to resend mail with confirmation link.</source>
+			</trans-unit>
+
+			<!-- Generic terms -->
+			<trans-unit id="name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="company" xml:space="preserve">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+
+			<!-- Form -->
+			<trans-unit id="form_button_submit" xml:space="preserve">
+				<source>SUBSCRIBE</source>
+			</trans-unit>
+			<trans-unit id="form_placeholder_name" xml:space="preserve">
+				<source>Your name*</source>
+			</trans-unit>
+			<trans-unit id="form_placeholder_company" xml:space="preserve">
+				<source>Your company*</source>
+			</trans-unit>
+			<trans-unit id="form_placeholder_email" xml:space="preserve">
+				<source>Your email address*</source>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p1" xml:space="preserve">
+				<source>I herewith declare my express agreement to the </source>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p2" xml:space="preserve">
+				<source>data protection provisions</source>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p3" xml:space="preserve">
+				<source> of ecom instruments GmbH.</source>
+			</trans-unit>
+
+			<!-- parsley.js -->
+			<trans-unit id="form_parsley_required" xml:space="preserve">
+				<source>This field is required</source>
+			</trans-unit>
+			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
+				<source>This is not a proper email address.</source>
+			</trans-unit>
+			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
+				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,29 @@
+{dismissibleAlert -> f:format.raw()}
+<f:form action="create" section="newsletterForm" enctype="multipart/form-data" id="newSubscription" name="newSubscription" object="{newSubscription}" additionalAttributes="{data-validate: 'html5', data-parsley-validate: 'data-parsley-validate'}">
+	<fieldset>
+		<div class="form-group">
+			<div class="row">
+				<f:render partial="Subscription/FormFields" arguments="{_all}" />
+				<div class="col-md-3"><f:form.button type="submit" class="btn btn-primary morelink" additionalAttributes="{autocomplete: 'off'}"><f:translate id="form_button_submit" /></f:form.button></div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="checkbox agb clearfix">
+						<label class="checkbox-inline" for="ecnls-privacy-policy">
+							<input data-parsley-id="16"
+							       data-parsley-required-message="{f:translate(id: 'form_parsley_privacypolicy')}"
+							       required="required"
+							       id="ecnls-privacy-policy"
+							       name="privacy-policy"
+							       value="1"
+							       type="checkbox"><f:translate id="form_privacypolicy_p1" /><f:link.typolink parameter="{f:if(condition:settings.dpspid,then:settings.dpspid,else:'1')}" target="_blank"><f:translate id="form_privacypolicy_p2" /></f:link.typolink><f:translate id="form_privacypolicy_p3" />
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-left: -99999px; position: absolute;"><label for="url"> Don't fill this field! </label><f:form.textfield id="url" name="url" /></div>
+	</fieldset>
+</f:form>
