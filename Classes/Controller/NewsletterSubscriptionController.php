@@ -281,6 +281,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 		$templateRootPath = "{$relativePath}Resources/Private/Templates/";
 		$partialRootPath = "{$relativePath}Resources/Private/Partials/";
 		$templatePathAndFilename = "{$templateRootPath}{$templateName}.html";
+		$view->setControllerContext($this->controllerContext);
 		$view->setLayoutRootPaths([$layoutRootPath]);
 		$view->setPartialRootPaths([$partialRootPath]);
 		$view->setTemplatePathAndFilename($templatePathAndFilename);

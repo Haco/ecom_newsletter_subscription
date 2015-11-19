@@ -1,5 +1,5 @@
 <div class="alert alert-warning alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	<f:translate id="mail_status_warning_notconfirmed" extensionName="ecom_newsletter_subscription" /><br />
-	<f:link.action action="resendActivationMail" pageUid="{settings.rootPage}" section="newsletterForm" extensionName="ecomNewsletterSubscription" pluginName="NewsletterSubscription" controller="NewsletterSubscription" noCacheHash="1" absolute="1" additionalParams="{tx_ecomnewslettersubscription_newslettersubscription: '{subscription: subscription}'}"><f:translate id="mail_status_warning_notconfirmed_resendlink" extensionName="ecom_newsletter_subscription" /></f:link.action>
+	<a href="{f:uri.action(action: 'resendActivationMail', noCacheHash: 1, arguments: '{subscription: subscription}')}#newsletterForm"><f:translate id="mail_status_warning_notconfirmed_resendlink" extensionName="ecom_newsletter_subscription" /></a>
 </div>
