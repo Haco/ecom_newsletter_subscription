@@ -257,7 +257,8 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 				->setTo([ $subscription->getEmail() => $subscription->getName() ])
 				->setSubject($this->settings['mail']['senderSubject'] ?: LocalizationUtility::translate('mail_subject_generic', $this->extensionName) . LocalizationUtility::translate('mail_subject_new', $this->extensionName))
 				->setBody($this->getStandAloneTemplate('Email/EmailSubscribed', [
-					'subscription' => $subscription
+					'subscription' => $subscription,
+					'language' => $GLOBALS['TSFE']->sys_language_content
 				]))
 				->send();
 
