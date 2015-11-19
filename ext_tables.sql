@@ -24,9 +24,9 @@ CREATE TABLE tx_ecomnewslettersubscription_domain_model_subscription (
 	company varchar(255) DEFAULT '' NOT NULL,
 	city varchar(255) DEFAULT '' NOT NULL,
 	zip varchar(20) DEFAULT '' NOT NULL,
-	country varchar(128) DEFAULT '' NOT NULL,
-	state varchar(255) DEFAULT '' NOT NULL,
-	image tinyblob NOT NULL,
+	country int(11) unsigned DEFAULT '0',
+	state int(11) unsigned DEFAULT '0',
+	image int(11) unsigned NOT NULL default '0',
 	description text NOT NULL,
 	hash varchar(255) DEFAULT '' NOT NULL,
 
@@ -35,7 +35,6 @@ CREATE TABLE tx_ecomnewslettersubscription_domain_model_subscription (
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
 	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
 	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	sorting int(11) DEFAULT '0' NOT NULL,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid)

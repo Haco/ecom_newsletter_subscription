@@ -248,39 +248,38 @@ return [
 			]
 		],
 		'state' => [
-			'exclude' => 1,
-			'label'   => "{$localLang}state",
-			'config'  => [
-				'type' => 'input',
-				'size' => 20,
-				'eval' => 'trim',
-				'max'  => 255
+			'displayCond' => 'FIELD:country:REQ:TRUE',
+			'exclude'     => 1,
+			'label'       => "{$localLang}state",
+			'config'      => [
+				'type'    => 'select',
+				'items'   => [ [ '', 0 ] ],
+				'foreign_table' => 'tx_ecomtoolbox_domain_model_state',
+				'foreign_table_where' => 'AND tx_ecomtoolbox_domain_model_state.sys_language_uid IN (-1,0) AND tx_ecomtoolbox_domain_model_state.country=###REC_FIELD_country###',
+				'minitems' => 0,
+				'maxitems' => 1
 			]
 		],
 		'country' => [
-			'exclude' => 1,
-			'label'   => 'LLL:EXT:lang/locallang_general.xlf:LGL.country',
-			'config'  => [
-				'type' => 'input',
-				'size' => 20,
-				'eval' => 'trim',
-				'max'  => 128
+			'exclude'   => 1,
+			'label'     => 'LLL:EXT:lang/locallang_general.xlf:LGL.country',
+			'config'    => [
+				'type'  => 'select',
+				'items' => [ [ '', 0 ] ],
+				'foreign_table' => 'tx_ecomtoolbox_domain_model_region',
+				'foreign_table_where' => 'AND tx_ecomtoolbox_domain_model_region.sys_language_uid IN (-1,0) AND tx_ecomtoolbox_domain_model_region.type=0 AND NOT tx_ecomtoolbox_domain_model_region.deleted ORDER BY tx_ecomtoolbox_domain_model_region.title',
+				'minitems' => 0,
+				'maxitems' => 1
 			]
 		],
 		'image' => [
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xlf:LGL.image',
-			'config'  => [
-				'type'          => 'group',
-				'internal_type' => 'file',
-				'allowed'       => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'max_size'      => 1000,
-				'uploadfolder'  => 'uploads/pics',
-				'show_thumbs'   => 1,
-				'size'          => 3,
-				'maxitems'      => 1,
-				'minitems'      => 0
-			]
+			'config'  => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+					'image',
+					[ 'maxitems' => 1 ],
+					$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+			)
 		],
 		'description' => [
 			'exclude' => 1,
