@@ -102,7 +102,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 	 * @return void
 	 */
 	public function newAction(\S3b0\EcomNewsletterSubscription\Domain\Model\Subscription $newSubscription = null, $dismissibleAlert = '') {
-		$privacyPolicyPage = $this->pageRepository->getPage(15);
+		$privacyPolicyPage = $this->pageRepository->getPage($this->settings['dpspid'] ?: 1);
 		if ( $language = $this->getTypoScriptFrontendController()->sys_language_uid ) {
 			$privacyPolicyPage = $this->pageRepository->getPageOverlay($privacyPolicyPage, $language);
 		}
