@@ -57,6 +57,12 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 	protected $subscriptionRepository;
 
 	/**
+	 * @var \TYPO3\CMS\Frontend\Page\PageRepository
+	 * @inject
+	 */
+	protected $pageRepository;
+
+	/**
 	 * Initializes the controller before invoking an action method.
 	 *
 	 * @return void
@@ -96,9 +102,15 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 	 * @return void
 	 */
 	public function newAction(\S3b0\EcomNewsletterSubscription\Domain\Model\Subscription $newSubscription = null, $dismissibleAlert = '') {
+		$privacyPolicyPage = $this->pageRepository->getPage(15);
+		if ( $language = $this->getTypoScriptFrontendController()->sys_language_uid ) {
+			$privacyPolicyPage = $this->pageRepository->getPageOverlay($privacyPolicyPage, $language);
+		}
+
 		$this->view->assignMultiple([
 			'newSubscription' => $newSubscription,
-			'dismissibleAlert' => $dismissibleAlert
+			'dismissibleAlert' => $dismissibleAlert,
+			'dpsNoOL' => !boolval($privacyPolicyPage['_PAGES_OVERLAY'])
 		]);
 	}
 
