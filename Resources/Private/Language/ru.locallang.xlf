@@ -104,6 +104,10 @@
 				<source>Email</source>
 				<target>Эл. почта</target>
 			</trans-unit>
+			<trans-unit id="email_footer" xml:space="preserve">
+				<source><![CDATA[This e-mail was generated automatically. Please do not answer to this e-mail.<br />For questions or any problems you may apply to webmaster@ecom-ex.com.]]></source>
+				<target><![CDATA[Это электронное письмо создано автоматически. Пожалуйста, не отвечайте на это письмо.<br />При возникновении вопросов или проблем Вы можете написать по адресу webmaster@ecom-ex.com.]]></target>
+			</trans-unit>
 
 			<!-- Form -->
 			<trans-unit id="form_button_submit" xml:space="preserve">
