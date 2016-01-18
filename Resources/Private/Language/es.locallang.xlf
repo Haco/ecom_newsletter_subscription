@@ -18,11 +18,11 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - Suscripción confirmada</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - Suscripción eliminada</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
@@ -46,7 +46,7 @@
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>Nueva suscripción recibida</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,11 +56,11 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>Correo reenviado</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[Se ha enviado un mensaje a su dirección de correo electrónico <b>%1$s</b> con un enlace para que active su perfil.<br />Tenga en cuenta que su suscripción no se activará hasta que haga clic en el enlace que aparece en el correo electrónico.]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
@@ -72,23 +72,23 @@
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>La dirección de correo electrónico ya se confirmó.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>Al parecer, ya se registró con esta dirección de correo electrónico.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>¡El enlace ha caducado!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>Se ha enviado el registro, pero todavía no se ha confirmado.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>Haga clic aquí para reenviar un correo con el enlace de confirmación.</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -138,7 +138,7 @@
 			<!-- PARSLEY.JS -->
 			<trans-unit id="form_parsley_required" xml:space="preserve">
 				<source>This field is required</source>
-				<target>Esta es una casilla obligatoria</target>
+				<target>Este es un campo obligatorio.</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>

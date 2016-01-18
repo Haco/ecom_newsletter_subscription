@@ -18,11 +18,11 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - Kepelangganan dikonfirmasi</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - Kepelangganan dihapus</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
@@ -42,11 +42,11 @@
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
 				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
-				<target>Jika Anda tidak dapat menyetujui kepelangganan (misalnya, jika orang lain berlangganan untuk Anda!) cukup klik tautan ini dan Anda akan dihapus dari basis data</target>
+				<target>Jika Anda tidak dapat menyetujui kepelangganan ini (misalnya, jika orang lain berlangganan untuk Anda!) cukup klik tautan ini dan Anda akan dihapus dari basis data:</target>
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>Kepelangganan baru diterima</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,11 +56,11 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>Email dikirim ulang</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[Email telah dikirim ke alamat email Anda, <b>%1$s</b>, beserta tautan untuk mengaktifkan profil Anda.<br />Harap diperhatikan bahwa kepelangganan Anda tidak aktif hingga Anda mengeklik tautan dalam email tersebut!]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
@@ -72,23 +72,23 @@
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>Alamat email telah dikonfirmasi!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>Tampaknya Anda sudah terdaftar dengan alamat email ini!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>Tautan telah kedaluwarsa!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>Pendaftaran telah dikirimkan, tapi belum dikonfirmasi!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>Klik di sini untuk mengirim ulang email dengan tautan konfirmasi.</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -142,11 +142,11 @@
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>
-				<source>This is not a proper email address.</source>
+				<source>Alamat email ini tidak tepat.</source>
 			</trans-unit>
 			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
 				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
-				<source><![CDATA[Harap konfirmasi <strong>ketentuan perlindungan data</strong>.]]></source>
+				<source><![CDATA[Harap konfirmasi <strong>pernyataan perlindungan data</strong>.]]></source>
 			</trans-unit>
 		</body>
 	</file>

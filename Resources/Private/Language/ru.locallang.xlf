@@ -10,7 +10,7 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_generic" xml:space="preserve">
 				<source>ecom Newsletter</source>
-				<target>Рассылка компании ecom</target>
+				<target>Новостная рассылка ecom</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_new" xml:space="preserve">
 				<source> - New subscription</source>
@@ -18,11 +18,11 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - Подписка подтверждена</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - Подписка удалена</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
@@ -30,23 +30,23 @@
 			</trans-unit>
 			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Ваша подписка УДАЛЕНА.</target>
+				<target>Ваша подписка УДАЛЕНА!</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
 				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
-				<target><![CDATA[Теперь вы подписаны на рассылку компании ecom.<br /><br />ВАЖНО:]]></target>
+				<target><![CDATA[Теперь Вы подписаны на новостную рассылку ecom.<br /><br />ВАЖНО:]]></target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkconfirm" xml:space="preserve">
 				<source>Before your subscriptions is fully enabled, you must click this link:</source>
-				<target>Перед тем как ваши подписки окончательно вступят в силу, необходимо перейти по этой ссылке:</target>
+				<target>Перед тем как Ваша подписка окончательно вступит в силу, необходимо перейти по этой ссылке:</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
 				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
-				<target>Если вы не согласны принять рассылку (например, если вы подписаны кем-то другим!), просто перейдите по этой ссылке, и ваши данные будут удалены из базы данных:</target>
+				<target>Если Вы не согласны на рассылку (например, если Вас подписал кто-то другой!), просто перейдите по этой ссылке, и Вы будете удалены из базы данных:</target>
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>Получена новая подписка</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,39 +56,39 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>Электронное письмо отправлено повторно</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[На Ваш адрес электронной почты <b>%1$s</b> отправлено письмо со ссылкой для активации Вашего профиля.<br />Обратите внимание, что Ваша подписка не активна до тех пор, пока Вы не перейдете по ссылке, указанной в письме!]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
-				<target>Ваша подписка подтверждена.</target>
+				<target>Ваша подписка подтверждена</target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Ваша подписка УДАЛЕНА.</target>
+				<target>Ваша подписка УДАЛЕНА!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>Этот электронный адрес уже подтвержден!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>Возможно, Вы уже зарегистрированы с этим электронным адресом!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>Срок действия этой ссылки истек!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>Заявка на регистрацию уже подана, но она еще не подтверждена!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>Нажмите здесь, чтобы снова отправить письмо со ссылкой подтверждения.</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -124,15 +124,15 @@
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p1" xml:space="preserve">
 				<source>I herewith declare my express agreement to the </source>
-				<target>Настоящим заявляю о своем положительно выраженном согласии с </target>
+				<target>Настоящим заявляю о своем официальном согласии с </target>
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p2" xml:space="preserve">
 				<source>data protection provisions</source>
-				<target>условиями защиты данных</target>
+				<target>положениями</target>
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p3" xml:space="preserve">
 				<source> of ecom instruments GmbH.</source>
-				<target> компании ecom instruments GmbH.</target>
+				<target> компании ecom instruments GmbH о защите данных.</target>
 			</trans-unit>
 
 			<!-- PARSLEY.JS -->
@@ -142,11 +142,11 @@
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>
-				<target>This is not a proper email address.</target>
+				<target>Это недействительный адрес электронной почты.</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
 				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
-				<target><![CDATA[Подтвердите согласие с <strong>условиями защиты информации</strong>.]]></target>
+				<target><![CDATA[Подтвердите своё согласие с <strong>положениями о защите данных</strong>.]]></target>
 			</trans-unit>
 		</body>
 	</file>

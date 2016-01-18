@@ -18,19 +18,19 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - 订阅已确认</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - 订阅已删除</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
-				<target>您已经成功确认您的订阅。</target>
+				<target>您已经成功确认订阅。</target>
 			</trans-unit>
 			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>您的订阅已被删除！</target>
+				<target>您的订阅已删除！</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
 				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
@@ -38,15 +38,15 @@
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkconfirm" xml:space="preserve">
 				<source>Before your subscriptions is fully enabled, you must click this link:</source>
-				<target>在您的订阅全面激活前，您必须点击此链接：</target>
+				<target>在订阅完全启用前，您必须点击此链接：</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
 				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
-				<target>如果您不接受订阅（例如，如果其他人已经为您订阅！），则只需点击此链接，您将被从数据库中删除：</target>
+				<target>如果您无法接受订阅（例如，其他人已经为您订阅！），则只需点击此链接，您将会从数据库中删除：</target>
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>收到新订阅</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,39 +56,39 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>已重新发送电子邮件</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[已经向您的电子邮件地址 <b>%1$s</b> 发送电子邮件，内部附有激活您帐户的链接。<br />请注意，只有点击该电子邮件中的链接后您的订阅才会激活！]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
-				<target>您的订阅已被批准</target>
+				<target>您的订阅已批准</target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>您的订阅已被删除！</target>
+				<target>您的订阅已删除！</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>电子邮件地址已经确认过！</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>您可能已经使用过该电子邮件地址进行注册！</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>链接已过期！</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>注册已提交，但尚未确认！</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>单击此处以重新发送附有确认链接的邮件。</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -116,23 +116,23 @@
 			</trans-unit>
 			<trans-unit id="form_placeholder_company" xml:space="preserve">
 				<source>Your company*</source>
-				<target>您的公司*</target>
+				<target>公司*</target>
 			</trans-unit>
 			<trans-unit id="form_placeholder_email" xml:space="preserve">
 				<source>Your email address*</source>
-				<target>您的电子邮件地址*</target>
+				<target>电子邮件地址*</target>
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p1" xml:space="preserve">
 				<source>I herewith declare my express agreement to the </source>
-				<target>我在此明确表示同意</target>
+				<target>我在此明确表示同意ecom instruments GmbH</target>
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p2" xml:space="preserve">
 				<source>data protection provisions</source>
-				<target>数据保护条款</target>
+				<target>的数据保护条款</target>
 			</trans-unit>
 			<trans-unit id="form_privacypolicy_p3" xml:space="preserve">
 				<source> of ecom instruments GmbH.</source>
-				<target>ecom instruments GmbH。</target>
+				<target>。</target>
 			</trans-unit>
 
 			<!-- PARSLEY.JS -->
@@ -142,7 +142,7 @@
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>
-				<target>This is not a proper email address.</target>
+				<target>这不是正确的邮件地址。</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
 				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>

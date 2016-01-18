@@ -6,89 +6,89 @@
 			<!-- Mails -->
 			<trans-unit id="mail_address" xml:space="preserve">
 				<source>Dear %1$s</source>
-				<target>Dear %1$s</target>
+				<target>Prezado(a) %1$s</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_generic" xml:space="preserve">
 				<source>ecom Newsletter</source>
-				<target>ecom Newsletter</target>
+				<target>Boletim informativo ecom</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_new" xml:space="preserve">
 				<source> - New subscription</source>
-				<target> - New subscription</target>
+				<target> - Nova assinatura</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - Assinatura confirmada</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - Assinatura excluída</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
-				<target>You have successfully confirmed your subscription.</target>
+				<target>Sua assinatura foi confirmada com êxito.</target>
 			</trans-unit>
 			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Your subscription was DELETED!</target>
+				<target>Sua assinatura foi EXCLUÍDA!</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
 				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
-				<target><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></target>
+				<target><![CDATA[Agora você tem uma assinatura do Boletim informativo ecom.<br /><br />IMPORTANTE:]]></target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkconfirm" xml:space="preserve">
 				<source>Before your subscriptions is fully enabled, you must click this link:</source>
-				<target>Before your subscriptions is fully enabled, you must click this link:</target>
+				<target>Antes que sua assinatura esteja totalmente habilitada, você deverá clicar neste link:</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
 				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
-				<target>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</target>
+				<target>Se não puder aceitar a assinatura (por exemplo, alguém já a fez para você), basta clicar neste link e você será excluído do banco de dados:</target>
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>Nova assinatura recebida</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
 			<trans-unit id="mail_status_initialsubscription_head" xml:space="preserve">
 				<source>Subscription received</source>
-				<target>Subscription received</target>
+				<target>Assinatura recebida</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>O e-mail foi reenviado</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[Um e-mail foi enviado ao endereço <b>%1$s</b>, com um link para ativar seu perfil.<br />Observe que sua assinatura não estará ativa até que você clique em um link nesse e-mail!]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
-				<target>Your subscription was approved</target>
+				<target>Sua assinatura foi aprovada</target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Your subscription was DELETED!</target>
+				<target>Sua assinatura foi EXCLUÍDA!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>O endereço de e-mail já foi confirmado!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>Aparentemente, você já está registrado com esse endereço de e-mail!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>O link expirou!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>O registro já foi enviado, mas ainda não está confirmado!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>Clique aqui para reenviar o e-mail com o link de confirmação.</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -138,15 +138,15 @@
 			<!-- PARSLEY.JS -->
 			<trans-unit id="form_parsley_required" xml:space="preserve">
 				<source>This field is required</source>
-				<target>This field is required</target>
+				<target>Este campo é obrigatório.</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>
-				<target>This is not a proper email address.</target>
+				<target>Este endereço de e-mail não é adequado.</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
 				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
-				<target><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></target>
+				<target><![CDATA[Confirme a <strong>declaração de proteção de dados</strong>.]]></target>
 			</trans-unit>
 		</body>
 	</file>

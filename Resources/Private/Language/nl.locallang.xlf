@@ -18,11 +18,11 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - Abonnement bevestigd</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - Abonnement beëindigd</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
@@ -30,7 +30,7 @@
 			</trans-unit>
 			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Uw abonnement is VERWIJDERD.</target>
+				<target>Uw abonnement is BEËINDIGD.</target>
 			</trans-unit>
 			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
 				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
@@ -46,7 +46,7 @@
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>nieuw abonnement</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,11 +56,11 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>De e-mail is opnieuw verzonden</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[Een e-mail is verzonden naar het opgegeven e-mailadres, <b>%1$s</b>. Deze e-mail bevat een koppeling waarmee u uw profiel kunt activeren.<br />Uw abonnement gaat pas in nadat u uw profiel hebt geactiveerd.]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
@@ -68,27 +68,27 @@
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
 				<source>Your subscription was DELETED!</source>
-				<target>Uw abonnement is VERWIJDERD.</target>
+				<target>Uw abonnement is BEËINDIGD.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>Dit e-mailadres is al eerder bevestigd.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>Het lijkt er op dat er al een account bestaat met dit e-mailadres.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>De koppeling is verlopen!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>Er is al een registratieaanvraag ingediend, maar deze is nog niet bevestigd.</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>Klik hier om opnieuw een e-mail met de bevestigingskoppeling te verzenden.</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -98,7 +98,7 @@
 			</trans-unit>
 			<trans-unit id="company" xml:space="preserve">
 				<source>Company</source>
-				<target>Firma</target>
+				<target>Bedrijf</target>
 			</trans-unit>
 			<trans-unit id="email" xml:space="preserve">
 				<source>Email</source>
@@ -116,7 +116,7 @@
 			</trans-unit>
 			<trans-unit id="form_placeholder_company" xml:space="preserve">
 				<source>Your company*</source>
-				<target>Firma*</target>
+				<target>Bedrijf*</target>
 			</trans-unit>
 			<trans-unit id="form_placeholder_email" xml:space="preserve">
 				<source>Your email address*</source>

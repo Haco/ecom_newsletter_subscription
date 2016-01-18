@@ -18,11 +18,11 @@
 			</trans-unit>
 			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
 				<source> - Subscription confirmed</source>
-				<target> - Subscription confirmed</target>
+				<target> - ยืนยันการสมัครสมาชิก</target>
 			</trans-unit>
 			<trans-unit id="mail_subject_deleted" xml:space="preserve">
 				<source> - Subscription deleted</source>
-				<target> - Subscription deleted</target>
+				<target> - ลบการสมัครสมาชิกแล้ว</target>
 			</trans-unit>
 			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
 				<source>You have successfully confirmed your subscription.</source>
@@ -46,7 +46,7 @@
 			</trans-unit>
 			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
 				<source>New subscription received</source>
-				<target>New subscription received</target>
+				<target>การสมัครสมาชิกใหม่ได้รับแล้ว</target>
 			</trans-unit>
 
 			<!-- Mail status messages -->
@@ -56,11 +56,11 @@
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
 				<source>Email was resend</source>
-				<target>Email was resend</target>
+				<target>อีเมลถูกส่งอีกครั้ง</target>
 			</trans-unit>
 			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
 				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
-				<target><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></target>
+				<target><![CDATA[อีเมลถูกส่งไปยังอีเมลแอดเดรสของคุณแล้ว <b>%1$s</b> พร้อมลิงก์สำหรับเปิดใช้งานโปรไฟล์ของคุณ<br />โปรดสังเกตว่าการสมัครสมาชิกของคุณยังไม่สามารถใช้ได้จนกว่าคุณจะคลิกลิงก์ในอีเมล!]]></target>
 			</trans-unit>
 			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
 				<source>Your subscription was approved</source>
@@ -72,23 +72,23 @@
 			</trans-unit>
 			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
 				<source>The email address was already confirmed!</source>
-				<target>The email address was already confirmed!</target>
+				<target>อีเมลแอดเดรสได้รับการยืนยันแล้ว!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
 				<source>Apparently you're already registered with this email address!</source>
-				<target>Apparently you're already registered with this email address!</target>
+				<target>คุณได้ลงทะเบียนด้วยอีเมลแอดเดรสนี้แล้ว!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
 				<source>The link has expired!</source>
-				<target>The link has expired!</target>
+				<target>ลิงก์หมดอายุแล้ว!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
 				<source>A registration was already submitted, but not yet confirmed!</source>
-				<target>A registration was already submitted, but not yet confirmed!</target>
+				<target>การลงทะเบียนถูกส่งแล้วแต่ยังไม่ได้รับการยืนยัน!</target>
 			</trans-unit>
 			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
 				<source>Click here to resend mail with confirmation link.</source>
-				<target>Click here to resend mail with confirmation link.</target>
+				<target>คลิกที่นี่เพื่อส่งเมลพร้อมลิงก์ยืนยันอีกครั้ง</target>
 			</trans-unit>
 
 			<!-- Generic terms -->
@@ -142,7 +142,7 @@
 			</trans-unit>
 			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
 				<source>This is not a proper email address.</source>
-				<target>This is not a proper email address.</target>
+				<target>นี่ไม่ใช่อีเมลแอดเดรสที่ถูกต้อง</target>
 			</trans-unit>
 			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
 				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
