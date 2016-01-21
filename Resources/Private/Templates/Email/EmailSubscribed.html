@@ -1,7 +1,7 @@
 <f:translate id="mail_address" extensionName="ecom_newsletter_subscription" arguments="{0: subscription.name}" /><br /><br />
 <f:translate id="mail_emailsubscribed_text" extensionName="ecom_newsletter_subscription" /><br /><br />
 <f:translate id="mail_emailsubscribed_introlinkconfirm" extensionName="ecom_newsletter_subscription" /><br />
-<a href="{f:uri.action(action: 'confirm', pageUid: settings.rootPage, noCacheHash: 1, arguments: '{hash: subscription.hash, email: subscription.email}')}#newsletterForm"><f:uri.action action="confirm" pageUid="{settings.rootPage}" noCacheHash="1" arguments="{hash: subscription.hash, email: subscription.email}" /></a><br /><br />
+<a href="{f:uri.action(action: 'confirm', absolute: 1, pageUid: settings.rootPage, noCacheHash: 1, arguments: '{hash: subscription.hash, email: subscription.email}')}#newsletterForm"><f:uri.action action="confirm" pageUid="{settings.rootPage}" noCacheHash="1" arguments="{hash: subscription.hash, email: subscription.email}" /></a><br /><br />
 <f:translate id="mail_emailsubscribed_introlinkdelete" extensionName="ecom_newsletter_subscription" /><br />
-<a href="{f:uri.action(action: 'delete', pageUid: settings.rootPage, noCacheHash: 1, arguments: '{hash: subscription.hash, email: subscription.email}')}#newsletterForm"><f:uri.action action="delete" pageUid="{settings.rootPage}" noCacheHash="1" arguments="{hash: subscription.hash, email: subscription.email}" /></a>
+<a href="{f:uri.action(action: 'delete', absolute: 1, pageUid: settings.rootPage, noCacheHash: 1, arguments: '{hash: subscription.hash, email: subscription.email}')}#newsletterForm"><f:uri.action action="delete" pageUid="{settings.rootPage}" noCacheHash="1" arguments="{hash: subscription.hash, email: subscription.email}" /></a>
 <f:render partial="Misc/EmailFooter" />
