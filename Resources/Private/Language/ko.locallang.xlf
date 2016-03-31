@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-13T11:48:47Z" product-name="ecom_newsletter_subscription">
+		<header/>
+		<body>
+			<!-- Mails -->
+			<trans-unit id="mail_address" xml:space="preserve">
+				<source>Dear %1$s</source>
+				<target>Dear %1$s</target>
+			</trans-unit>
+			<trans-unit id="mail_subject_generic" xml:space="preserve">
+				<source>ecom Newsletter</source>
+				<target>ecom 뉴스레터</target>
+			</trans-unit>
+			<trans-unit id="mail_subject_new" xml:space="preserve">
+				<source> - New subscription</source>
+				<target> - 신규 가입</target>
+			</trans-unit>
+			<trans-unit id="mail_subject_confirmed" xml:space="preserve">
+				<source> - Subscription confirmed</source>
+				<target> - Subscription confirmed</target>
+			</trans-unit>
+			<trans-unit id="mail_subject_deleted" xml:space="preserve">
+				<source> - Subscription deleted</source>
+				<target> - Subscription deleted</target>
+			</trans-unit>
+			<trans-unit id="mail_emailconfirmed_text" xml:space="preserve">
+				<source>You have successfully confirmed your subscription.</source>
+				<target>귀하는 성공적으로 가입을 완료되었습니다.</target>
+			</trans-unit>
+			<trans-unit id="mail_emaildeleted_text" xml:space="preserve">
+				<source>Your subscription was DELETED!</source>
+				<target>삭제 되었습니다!</target>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_text" xml:space="preserve">
+				<source><![CDATA[You're now subscribed to the ecom Newsletter.<br /><br />IMPORTANT:]]></source>
+				<target><![CDATA[귀하는 ECOM 뉴스레터에 가입 하였습니다<br /><br />중요사항]]></target>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_introlinkconfirm" xml:space="preserve">
+				<source>Before your subscriptions is fully enabled, you must click this link:</source>
+				<target>귀하의 가입신청이 완전히 활성화되기 전에, 귀하는 이 링크를 클릭해야 합니다</target>
+			</trans-unit>
+			<trans-unit id="mail_emailsubscribed_introlinkdelete" xml:space="preserve">
+				<source>If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:</source>
+				<target>귀하의 가입을 받아들일 수 없다면, (예를 들어 다른 사람이 귀하를 가입한 경우!), 이 링크를 클릭하면 귀하의 등록은 데이터베이스로부터 삭제됩니다.</target>
+			</trans-unit>
+			<trans-unit id="mail_subscriptionreceived_head" xml:space="preserve">
+				<source>New subscription received</source>
+				<target>신규 가입</target>
+			</trans-unit>
+
+			<!-- Mail status messages -->
+			<trans-unit id="mail_status_initialsubscription_head" xml:space="preserve">
+				<source>Subscription received</source>
+				<target>가입 동의 </target>
+			</trans-unit>
+			<trans-unit id="mail_status_initialsubscriptionresend_head" xml:space="preserve">
+				<source>Email was resend</source>
+				<target>이메일 재전송했다</target>
+			</trans-unit>
+			<trans-unit id="mail_status_initialsubscription_body" xml:space="preserve">
+				<source><![CDATA[An email has been sent to your email address, <b>%1$s</b>, with a link to activate your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!]]></source>
+				<target><![CDATA[귀하는 당사의  뉴스 레터에 가입하였습니다. 귀하의 프로필 관리에 대한 링크와 이메일 주소, <b>%1$s</b>로 이메일이 전송되었습니다<br />당 이메일에 포함 된 링크를 클릭 할 때까지 가입이 활성화 되지 않음을 알려드립니다!]]></target>
+			</trans-unit>
+			<trans-unit id="mail_status_subscriptionconfirmed_head" xml:space="preserve">
+				<source>Your subscription was approved</source>
+				<target>승인 되었습니다.</target>
+			</trans-unit>
+			<trans-unit id="mail_status_subscriptiondeleted_head" xml:space="preserve">
+				<source>Your subscription was DELETED!</source>
+				<target>삭제 되었습니다!</target>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_alreadyconfirmed" xml:space="preserve">
+				<source>The email address was already confirmed!</source>
+				<target>The email address was already confirmed!</target>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_duplicatefound" xml:space="preserve">
+				<source>Apparently you're already registered with this email address!</source>
+				<target>Apparently you're already registered with this email address!</target>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_linkexpired" xml:space="preserve">
+				<source>The link has expired!</source>
+				<target>링크가 만료되었습니다!</target>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_notconfirmed" xml:space="preserve">
+				<source>A registration was already submitted, but not yet confirmed!</source>
+				<target>A registration was already submitted, but not yet confirmed!</target>
+			</trans-unit>
+			<trans-unit id="mail_status_warning_notconfirmed_resendlink" xml:space="preserve">
+				<source>Click here to resend mail with confirmation link.</source>
+				<target>Click here to resend mail with confirmation link.</target>
+			</trans-unit>
+
+			<!-- Generic terms -->
+			<trans-unit id="name" xml:space="preserve">
+				<source>Name</source>
+				<target>이름</target>
+			</trans-unit>
+			<trans-unit id="company" xml:space="preserve">
+				<source>Company</source>
+				<target>회사명</target>
+			</trans-unit>
+			<trans-unit id="email" xml:space="preserve">
+				<source>Email</source>
+				<target>이메일</target>
+			</trans-unit>
+			<trans-unit id="email_footer" xml:space="preserve">
+				<source><![CDATA[This e-mail was generated automatically. Please do not answer to this e-mail.<br />For questions or any problems you may apply to webmaster@ecom-ex.com.]]></source>
+				<target><![CDATA[This e-mail was generated automatically. Please do not answer to this e-mail.<br />For questions or any problems you may apply to webmaster@ecom-ex.com.]]></target>
+			</trans-unit>
+
+			<!-- Form -->
+			<trans-unit id="form_button_submit" xml:space="preserve">
+				<source>SUBSCRIBE</source>
+				<target>서명</target>
+			</trans-unit>
+			<trans-unit id="form_placeholder_name" xml:space="preserve">
+				<source>Your name*</source>
+				<target>이름*</target>
+			</trans-unit>
+			<trans-unit id="form_placeholder_company" xml:space="preserve">
+				<source>Your company*</source>
+				<target>회사명*</target>
+			</trans-unit>
+			<trans-unit id="form_placeholder_email" xml:space="preserve">
+				<source>Your email address*</source>
+				<target>이메일주소*</target>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p1" xml:space="preserve">
+				<source>I herewith declare my express agreement to the </source>
+				<target>나는 ecom instruments GmbH의 </target>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p2" xml:space="preserve">
+				<source>data protection provisions</source>
+				<target>데이터보호규칙</target>
+			</trans-unit>
+			<trans-unit id="form_privacypolicy_p3" xml:space="preserve">
+				<source> of ecom instruments GmbH.</source>
+				<target>을 준수할 것을 서약합니다.</target>
+			</trans-unit>
+
+			<!-- PARSLEY.JS -->
+			<trans-unit id="form_parsley_required" xml:space="preserve">
+				<source>This field is required.</source>
+				<target>이 필드는 필수입니다.</target>
+			</trans-unit>
+			<trans-unit id="form_parsley_invalidemail" xml:space="preserve">
+				<source>This is not a proper email address.</source>
+				<target>This is not a proper email address.</target>
+			</trans-unit>
+			<trans-unit id="form_parsley_privacypolicy" xml:space="preserve">
+				<source><![CDATA[Please confirm the <strong>data protection statement</strong>.]]></source>
+				<target><![CDATA[<strong>데이터 보호 규정을</strong> 확인하시기 바랍니다]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
