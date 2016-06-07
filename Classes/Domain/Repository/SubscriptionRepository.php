@@ -1,7 +1,6 @@
 <?php
 namespace S3b0\EcomNewsletterSubscription\Domain\Repository;
 
-
 /***************************************************************
  *
  *  Copyright notice
@@ -26,118 +25,126 @@ namespace S3b0\EcomNewsletterSubscription\Domain\Repository;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * The repository for Subscriptions
  */
-class SubscriptionRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
+class SubscriptionRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+{
 
-	/**
-	 * Set repository wide settings
-	 */
-	public function initializeObject() {
-		/** @var \TYPO3\CMS\Extbase\Persistence\Generic\QuerySettingsInterface $querySettings */
-		$querySettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\QuerySettingsInterface::class);
-		$querySettings->setRespectStoragePage(false); // Disable storage pid
-		$this->setDefaultQuerySettings($querySettings);
-	}
+    /**
+     * Set repository wide settings
+     */
+    public function initializeObject()
+    {
+        /** @var \TYPO3\CMS\Extbase\Persistence\Generic\QuerySettingsInterface $querySettings */
+        $querySettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\QuerySettingsInterface::class);
+        $querySettings->setRespectStoragePage(false); // Disable storage pid
+        $this->setDefaultQuerySettings($querySettings);
+    }
 
-	/**
-	 * @param int $uid
-	 * @return object
-	 */
-	public function findByUid($uid) {
-		$query = $this->createQuery();
-		$this->setLocalQuerySettings($query);
+    /**
+     * @param int $uid
+     * @return object
+     */
+    public function findByUid($uid)
+    {
+        $query = $this->createQuery();
+        $this->setLocalQuerySettings($query);
 
-		return $query->matching(
-			$query->equals('uid', $uid)
-		)->execute()->getFirst();
-	}
+        return $query->matching(
+            $query->equals('uid', $uid)
+        )->execute()->getFirst();
+    }
 
-	/**
-	 * @param string $email
-	 * @return null|object
-	 */
-	public function findByEmail($email) {
-		if ( !GeneralUtility::validEmail($email) ) {
-			return null;
-		}
+    /**
+     * @param string $email
+     * @return null|object
+     */
+    public function findByEmail($email)
+    {
+        if (!GeneralUtility::validEmail($email)) {
+            return null;
+        }
 
-		$query = $this->createQuery();
-		$this->setLocalQuerySettings($query);
+        $query = $this->createQuery();
+        $this->setLocalQuerySettings($query);
 
-		return $query->matching(
-			$query->logicalAnd(
-				$query->equals('deleted', 0),
-				$query->equals('email', $email, false),
-				$query->greaterThan('crdate', time() - 604800)
-			)
-		)->setOrderings([
-			'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
-		])->execute()->getFirst();
-	}
+        return $query->matching(
+            $query->logicalAnd(
+                $query->equals('deleted', 0),
+                $query->equals('email', $email, false),
+                $query->greaterThan('crdate', time() - 604800)
+            )
+        )->setOrderings([
+            'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
+        ])->execute()->getFirst();
+    }
 
-	/**
-	 * @param string $hash
-	 * @param string $email
-	 * @return null|object
-	 */
-	public function findUnconfirmedByHashAndEmail($hash, $email) {
-		if ( !GeneralUtility::validEmail($email) ) {
-			return null;
-		}
+    /**
+     * @param string $hash
+     * @param string $email
+     * @return null|object
+     */
+    public function findUnconfirmedByHashAndEmail($hash, $email)
+    {
+        if (!GeneralUtility::validEmail($email)) {
+            return null;
+        }
 
-		$query = $this->createQuery();
-		$this->setLocalQuerySettings($query);
+        $query = $this->createQuery();
+        $this->setLocalQuerySettings($query);
 
-		return $query->matching(
-			$query->logicalAnd([
-				$query->equals('hidden', 1),
-				$query->equals('deleted', 0),
-				$query->equals('hash', $hash),
-				$query->equals('email', $email, false)
-			])
-		)->setOrderings([
-			'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
-		])->execute()->getFirst();
-	}
+        return $query->matching(
+            $query->logicalAnd([
+                $query->equals('hidden', 1),
+                $query->equals('deleted', 0),
+                $query->equals('hash', $hash),
+                $query->equals('email', $email, false)
+            ])
+        )->setOrderings([
+            'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
+        ])->execute()->getFirst();
+    }
 
-	/**
-	 * @param string $hash
-	 * @param string $email
-	 * @return null|object
-	 */
-	public function findConfirmedByHashAndEmail($hash, $email) {
-		if ( !GeneralUtility::validEmail($email) ) {
-			return null;
-		}
+    /**
+     * @param string $hash
+     * @param string $email
+     * @return null|object
+     */
+    public function findConfirmedByHashAndEmail($hash, $email)
+    {
+        if (!GeneralUtility::validEmail($email)) {
+            return null;
+        }
 
-		$query = $this->createQuery();
-		$this->setLocalQuerySettings($query);
+        $query = $this->createQuery();
+        $this->setLocalQuerySettings($query);
 
-		return $query->matching(
-			$query->logicalAnd([
-				$query->equals('hidden', 0),
-				$query->equals('deleted', 0),
-				$query->equals('hash', $hash),
-				$query->equals('email', $email, false)
-			])
-		)->setOrderings([
-			'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
-		])->execute()->getFirst();
-	}
+        return $query->matching(
+            $query->logicalAnd([
+                $query->equals('hidden', 0),
+                $query->equals('deleted', 0),
+                $query->equals('hash', $hash),
+                $query->equals('email', $email, false)
+            ])
+        )->setOrderings([
+            'tstamp' => \TYPO3\CMS\Extbase\Persistence\Generic\Query::ORDER_DESCENDING
+        ])->execute()->getFirst();
+    }
 
-	/**
-	 * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
-	 * @return void
-	 */
-	private function setLocalQuerySettings(\TYPO3\CMS\Extbase\Persistence\QueryInterface &$query) {
-		$query->setQuerySettings(
-			$query->getQuerySettings()
-				  ->setRespectStoragePage(false)
-				  ->setIgnoreEnableFields(true)
-		);
-	}
+    /**
+     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
+     * @return void
+     */
+    private function setLocalQuerySettings(\TYPO3\CMS\Extbase\Persistence\QueryInterface &$query)
+    {
+        $query->setQuerySettings(
+            $query->getQuerySettings()
+                ->setRespectStoragePage(false)
+                ->setIgnoreEnableFields(true)
+        );
+    }
 }
