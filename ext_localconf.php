@@ -7,10 +7,10 @@ if (!defined('TYPO3_MODE')) {
 	'S3b0.EcomNewsletterSubscription',
 	'NewsletterSubscription',
 	[
-		'NewsletterSubscription' => 'new, create, confirm, delete, resendActivationMail'
+		'Subscription' => 'new, create, confirm, delete, resendActivationMail'
 	],
 	// non-cacheable actions
 	[
-		'NewsletterSubscription' => 'new, create, confirm, delete, resendActivationMail'
+		'Subscription' => 'new, create, confirm, delete, resendActivationMail'
 	]
 );

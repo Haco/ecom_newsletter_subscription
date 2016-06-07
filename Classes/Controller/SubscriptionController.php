@@ -1,7 +1,6 @@
 <?php
 namespace S3b0\EcomNewsletterSubscription\Controller;
 
-
 /***************************************************************
  *
  *  Copyright notice
@@ -31,9 +30,9 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
- * NewsletterSubscriptionController
+ * SubscriptionController
  */
-class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\ActionController {
+class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionController {
 
 	/**
 	 * @var array|null
@@ -68,7 +67,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 	 * @return void
 	 */
 	protected function initializeAction() {
-		  // ecom online root page, may be overwritten by TS
+        // ecom online root page, may be overwritten by TS
 		$this->settings['rootPage'] = $this->settings['rootPage'] ?: 13;
 		$this->settings['mail']['noReplyEmail'] = $this->settings['mail']['noReplyEmail'] ?: 'noreply@ecom-ex.com';
 		$this->settings['mail']['senderName'] = $this->settings['mail']['senderName'] ?: ($GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] ?: null);
@@ -183,7 +182,7 @@ class NewsletterSubscriptionController extends \Ecom\EcomToolbox\Controller\Acti
 			  // Email to receiver
 			$mailToReceiver->setFrom([ $subscription->getEmail() => "{$subscription->getFirstName()} {$subscription->getLastName()}" ])
 				->setCc($this->carbonCopyEmailAddresses)
-				->setTo([ 'alexander.maertens@ecom-ex.com' => 'Alexander Maertens' ])
+				->setTo([ 'Alexander.Maertens@ecom-ex.com' => 'Alexander Maertens' ])
 				->setSubject($this->settings['mail']['receiverSubject'] ?: LocalizationUtility::translate('mail_subject_generic', $this->extensionName) . LocalizationUtility::translate('mail_subject_new', $this->extensionName))
 				->setBody($this->getStandAloneTemplate('Email/SubscriptionReceived', [
 					'subscription' => $subscription,
