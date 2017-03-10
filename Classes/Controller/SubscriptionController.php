@@ -72,6 +72,7 @@ class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionControll
     {
         // ecom online root page, may be overwritten by TS
         $this->settings['rootPage'] = $this->settings['rootPage'] ?: 13;
+        $this->settings['langid'] = $GLOBALS['TSFE']->sys_language_uid ?: 0;
         $this->settings['mail']['noReplyEmail'] = $this->settings['mail']['noReplyEmail'] ?: 'noreply@ecom-ex.com';
         $this->settings['mail']['senderName'] = $this->settings['mail']['senderName'] ?: ($GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] ?: null);
         #$this->settings['mail']['carbonCopy'] = $this->settings['mail']['carbonCopy'] ?: 'marketing@ecom-ex.com ecom Marketing';

@@ -1,4 +1,7 @@
 <div class="col-md-3">
+    <label for="ecnls-name" class="text-uppercase">
+        {f:translate(id: 'form_placeholder_name', default: 'Your name*')}
+    </label>
 	<f:form.textfield additionalAttributes="{data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}'}"
 	                  required="required"
 	                  placeholder="{f:translate(id: 'form_placeholder_name', default: 'Your name*')}"
@@ -7,6 +10,9 @@
 	                  property="name" />
 </div>
 <div class="col-md-3">
+    <label for="ecnls-company" class="text-uppercase">
+        {f:translate(id: 'form_placeholder_company', default: 'Your company*')}
+    </label>
 	<f:form.textfield additionalAttributes="{data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}'}"
 	                  required="required"
 	                  placeholder="{f:translate(id: 'form_placeholder_company', default: 'Your company*')}"
@@ -15,6 +21,9 @@
 	                  property="company" />
 </div>
 <div class="col-md-3">
+    <label for="ecnls-email" class="text-uppercase">
+        {f:translate(id: 'form_placeholder_email', default: 'Your email address*')}
+    </label>
 	<f:form.textfield additionalAttributes="{autocomplete: 'off', data-parsley-required-message: '{f:translate(id: \'form_parsley_required\')}', data-parsley-error-message: '{f:translate(id: \'form_parsley_invalidemail\')}'}"
 	                  required="required"
 	                  placeholder="{f:translate(id: 'form_placeholder_email', default: 'Your email address*')}"

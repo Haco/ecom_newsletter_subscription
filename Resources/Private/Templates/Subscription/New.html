@@ -1,5 +1,5 @@
 {dismissibleAlert -> f:format.raw()}
-<f:form action="create" noCacheHash="1" section="newsletterForm" enctype="multipart/form-data" id="newSubscription" name="newSubscription" object="{newSubscription}" additionalAttributes="{data-validate: 'html5', data-parsley-validate: 'data-parsley-validate'}">
+<f:form actionUri="{f:uri.action(action:'create', pageUid:settings.rootPage, noCacheHash:1)}#newsletterForm" pageUid="{settings.rootPage}" enctype="multipart/form-data" id="newSubscription" name="newSubscription" object="{newSubscription}" additionalAttributes="{data-validate: 'html5', data-parsley-validate: 'data-parsley-validate'}">
 	<fieldset>
 		<div class="form-group">
 			<div class="row">
