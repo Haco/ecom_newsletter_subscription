@@ -179,6 +179,7 @@ class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionControll
             // Email to sender
             $mailToSender->setFrom($this->noReplyEmailAddresses ?: $this->senderEmailAddresses)
                 ->setTo([$subscription->getEmail() => $subscription->getName()])
+                ->setSender('noreply@ecom-ex.com', 'ecom instruments')
                 ->setSubject($this->settings['mail']['senderSubject'] ?: LocalizationUtility::translate('mail_subject_generic',
                         $this->extensionName) . LocalizationUtility::translate('mail_subject_confirmed',
                         $this->extensionName))
@@ -194,6 +195,7 @@ class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionControll
             // Email to receiver
             $mailToReceiver->setFrom([$subscription->getEmail() => "{$subscription->getFirstName()} {$subscription->getLastName()}"])
                 ->setCc($this->carbonCopyEmailAddresses)
+                ->setSender('noreply@ecom-ex.com', 'ecom instruments')
                 ->setTo(['Alexander.Maertens@ecom-ex.com' => 'Alexander Maertens'])
                 ->setSubject($this->settings['mail']['receiverSubject'] ?: LocalizationUtility::translate('mail_subject_generic',
                         $this->extensionName) . LocalizationUtility::translate('mail_subject_new',
@@ -242,6 +244,7 @@ class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionControll
             // Email to sender
             $mailToSender->setFrom($this->noReplyEmailAddresses ?: $this->senderEmailAddresses)
                 ->setTo([$subscription->getEmail() => $subscription->getName()])
+                ->setSender('noreply@ecom-ex.com', 'ecom instruments')
                 ->setSubject($this->settings['mail']['senderSubject'] ?: LocalizationUtility::translate('mail_subject_generic',
                         $this->extensionName) . LocalizationUtility::translate('mail_subject_deleted',
                         $this->extensionName))
@@ -286,6 +289,7 @@ class SubscriptionController extends \Ecom\EcomToolbox\Controller\ActionControll
         // Email to sender
         $mailToSender->setFrom($this->noReplyEmailAddresses ?: $this->senderEmailAddresses)
             ->setTo([$subscription->getEmail() => $subscription->getName()])
+            ->setSender('noreply@ecom-ex.com', 'ecom instruments')
             ->setSubject($this->settings['mail']['senderSubject'] ?: LocalizationUtility::translate('mail_subject_generic',
                     $this->extensionName) . LocalizationUtility::translate('mail_subject_new', $this->extensionName))
             ->setBody($this->getStandAloneTemplate('Email/EmailSubscribed', [
