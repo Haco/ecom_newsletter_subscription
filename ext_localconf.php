@@ -11,6 +11,6 @@ if (!defined('TYPO3_MODE')) {
     ],
     // non-cacheable actions
     [
-        'Subscription' => 'new, create, confirm, delete, resendActivationMail'
+        'Subscription' => 'create, confirm, delete, resendActivationMail'
     ]
 );
